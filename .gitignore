@@ -1,23 +1,50 @@
-# Compiled class file
-*.class
+//Crear clase Persona.
+// Crear variables las privadas edad, nombre y telefono de la clase Persona.
+//Crear gets y sets de cada propiedad.
+//Crear un objeto persona en el main.
+//Utiliza los gets y sets para darle valores a las propiedades edad, nombre y telefono, por último muéstralas por consola.
 
-# Log file
-*.log
+public class Main {
 
-# BlueJ files
-*.ctxt
+        public static void main(String[] args) {
+            Persona persona = new Persona();
+            persona.setEdad(32);
+            System.out.println(persona.getEdad());
+            persona.setNombre("Alex");
+            System.out.println(persona.getNombre());
+            persona.setTelefono(26046673);
+            System.out.println(persona.getTelefono());
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+        }
+    }
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+    class Persona {
+        private int edad;
+        private String nombre;
+        private int telefono;
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+        public void setEdad(int edad) {
+            this.edad = edad;
+        }
+
+        public int getEdad() {
+            return this.edad;
+        }
+
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+
+        public String getNombre() {
+            return this.nombre;
+        }
+
+        public void setTelefono(int telefono) {
+            this.telefono = telefono;
+        }
+
+        public int getTelefono() {
+            return this.telefono;
+        }
+
+    }
